@@ -243,3 +243,13 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+
+#Typescript compiled files
+**/Scripts/App/
+
+#Library files
+libs/
+
+#Typings
+typings/

@@ -1,0 +1,120 @@
+﻿<div>Welcome</div>
+
+<ul class="nav nav-pills nav-stacked">
+
+    <li [ngClass]="{active: path==''}">
+
+        <a [routerLink]="['/']">Home</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='feature1'}">
+
+        <a [routerLink]="['/feature1']">Feature1</a>
+
+    </li>    
+    <li [ngClass]="{active: path=='feature2'}">
+
+        <a [routerLink]="['/feature2']">Feature2</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='/feature2/child2'}">
+
+        <a [routerLink]="['/feature2/child2']">Feature2 - Child2</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='/feature2/child2/grandchild2'}">
+
+        <a [routerLink]="['/feature2/child2/grandchild2']">Feature2 - Child2 - grandchild2</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='feature3'}">
+
+        <a [routerLink]="['/feature3']">Feature3</a>
+
+    </li>
+    <li [ngClass]="{active: path=='feature4'}">
+
+        <a [routerLink]="['/feature4']">Feature4</a>
+
+    </li>
+
+    <!--<li [ngClass]="{active: path=='control-form'}">
+
+        <a [routerLink]="['/Feature2']">Feature2</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='my-form'}">
+
+        <a [routerLink]="['/my-form']">Form Component</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='form2'}">
+
+        <a [routerLink]="['/form2']">NgModel Form</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='input-output'}">
+
+        <a [routerLink]="['/input-output']">InputOutput</a>
+
+    </li>
+
+    <li [ngClass]="{active: path.indexOf('start') > -1}">
+
+        <a [routerLink]="['/start/main']">Router</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='dynamic-controls'}">
+
+        <a [routerLink]="['/dynamic-controls']">DynamicControls</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='todo-app'}">
+
+        <a [routerLink]="['/todo-app']">TodoApp</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='di-tree'}">
+
+        <a [routerLink]="['/di-tree']">DITree</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='angular-directives'}">
+
+        <a [routerLink]="['/angular-directives']">AngularDirectives</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='change-detection'}">
+
+        <a [routerLink]="['/change-detection']">ChangeDetection</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='stress-tester'}">
+
+        <a [routerLink]="['./stress-tester']">StressTester</a>
+
+    </li>
+
+    <li [ngClass]="{active: path=='metadata-test'}">
+
+        <a [routerLink]="['./metadata-test']">MetadataTest</a>
+
+    </li>-->
+
+</ul>
+
+
+<router-outlet></router-outlet>

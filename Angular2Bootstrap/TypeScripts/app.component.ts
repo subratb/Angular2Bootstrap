@@ -1,6 +1,13 @@
 ﻿import {Component} from '@angular/core';
-@Component({
-        selector: 'my-app',
-        template: `<div>welcome</div>`
+import {Router} from '@angular/router';
+
+@Component({    
+    selector: 'my-app',
+    templateUrl: `./Html/app.html`
+    
 })
-export class AppComponent { }
+export class AppComponent {
+    constructor(private router: Router) {
+
+    }
+}

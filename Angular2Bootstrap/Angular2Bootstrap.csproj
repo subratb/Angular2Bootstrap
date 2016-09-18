@@ -45,10 +45,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Css\app.css" />
     <Content Include="gulpfile.js" />
+    <Content Include="Html\About\about.html" />
+    <Content Include="Html\app.html" />
+    <Content Include="Html\Feature1\Child1\child1.html" />
+    <Content Include="Html\Feature1\Child2\child2.html" />
+    <Content Include="Html\Feature1\feature1.html" />
+    <Content Include="Html\Feature2\Child1\child1.html" />
+    <Content Include="Html\Feature2\feature2.html" />
+    <Content Include="Html\Feature2\Child2\child2.html" />
+    <Content Include="Html\Feature2\Child2\GrandChild1\grandchild1.html" />
+    <Content Include="Html\Feature2\Child2\GrandChild2\grandchild2.html" />
+    <Content Include="Html\Feature2\Child3\child3.html" />
+    <Content Include="Html\Feature3\feature3.html" />
+    <Content Include="Html\Feature4\feature4.html" />
+    <Content Include="Html\Home\home.html" />
+    <Content Include="Html\Login\login.html" />
+    <Content Include="Html\page-not-found.html" />
+    <Content Include="Html\Register\register.html" />
     <Content Include="Index.html" />
     <Content Include="Scripts\systemjs.config.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
@@ -60,18 +80,66 @@
     <Content Include="typings.json" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="TypeScripts\About\about.component.ts" />
     <TypeScriptCompile Include="TypeScripts\app.component.ts" />
     <TypeScriptCompile Include="TypeScripts\app.module.ts" />
+    <TypeScriptCompile Include="TypeScripts\app.routing.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature1\feature1-child1-resolve.service.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature1\feature1.module.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature1\Child1\feature1.child1.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature1\Child2\feature1.child2.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature1\feature1.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature1\feature1.routing.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child1\feature2.child1.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child2\feature2.child2.module.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child2\feature2.child2.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child2\feature2.child2.routing.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child2\GrandChild1\feature2.child2.grandchild1.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child2\GrandChild2\feature2.child2.grandchild2.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\Child3\feature2.child3.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\feature2.routing.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\feature2.module.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature2\feature2.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature3\feature3.routing.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature3\feature3.module.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature3\feature3.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature4\feature4.routing.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature4\feature4.module.ts" />
+    <TypeScriptCompile Include="TypeScripts\Feature4\feature4.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Home\home.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Login\login.component.ts" />
     <TypeScriptCompile Include="TypeScripts\main.ts" />
+    <TypeScriptCompile Include="TypeScripts\page-not-found.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Register\register.component.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\auth-guard.service.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\auth.service.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\can-deactivate-guard.service.ts" />
+    <TypeScriptCompile Include="TypeScripts\Services\feature1.service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Css\About\" />
+    <Folder Include="Css\Feature1\Child1\" />
+    <Folder Include="Css\Feature1\Child2\" />
+    <Folder Include="Css\Feature2\Child1\" />
+    <Folder Include="Css\Feature2\Child2\GrandChild1\" />
+    <Folder Include="Css\Feature2\Child2\GrandChild2\" />
+    <Folder Include="Css\Feature2\Child3\" />
+    <Folder Include="Css\Feature3\" />
+    <Folder Include="Css\Feature4\" />
+    <Folder Include="Css\Home\" />
+    <Folder Include="Css\Login\" />
+    <Folder Include="Css\Register\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <!-- <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" /> -->
   <!--   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" /> -->
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -79,7 +147,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>5517</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
